@@ -1,14 +1,133 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vapor</title>
-    <link rel="short icon" href="images/logo.ico"  />
+    <link rel="shortcut icon" href="images/logo.ico" />
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1><img src="images/logo.png" width="40" height="40" id="logotop"> Vapor</h1>
-    <h2>Te trazendo jogos desde hoje</h2>
+
+    <header class="header">
+        <div class="header-content">
+            <div class="brand">
+                <h1>
+                    <img src="images/logo.png" width="36" height="36" id="logotop" alt="Vapor Logo">
+                    <span>Vapor</span>
+                </h1>
+                <p id="subtitle">Te trazendo jogos desde hoje</p>
+            </div>
+
+            <nav class="nav-links">
+                <a href="#" class="nav-item active">Loja</a>
+                <a href="#" class="nav-item">Biblioteca</a>
+                <a href="#" class="nav-item">Comunidade</a>
+            </nav>
+
+            <div class="search-box">
+                <input type="text" placeholder="Buscar no catálogo..." autocomplete="off">
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="section">
+            <h2 class="section-title">Destaque Principal</h2>
+            
+            <article class="featured-card">
+                <div class="featured-img-wrapper">
+                    <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3280350/6270c77b0729e2df0a17d660286eeddfd9169386/header_2x.jpg?t=1774022345" alt="DEATH STRANDING 2: ON THE BEACH" class="featured-img">
+                </div>
+                <div class="featured-info">
+                    <div class="featured-body">
+                        <h3 class="featured-title">DEATH STRANDING 2: ON THE BEACH</h3>
+                        <p class="featured-desc">Com companheiros ao seu lado, Sam inicia uma nova jornada para salvar a humanidade da extinção. Junte-se a eles na viagem por um mundo problemático repleto de inimigos sobrenaturais, obstáculos e uma dúvida inquietante: deveríamos ter nos conectado?</p>
+                        <div class="tags">
+                            <span class="tag">Mundo aberto</span>
+                            <span class="tag">Exploração</span>
+                            <span class="tag">Sci-Fi</span>
+                        </div>
+                    </div>
+                    <div class="price-row">
+                        <span class="price-val">R$ 399,90</span>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Catálogo de Jogos</h2>
+            
+            <div class="catalog-grid">
+                <article class="game-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/header.jpg?t=1757349115" alt="Undertale" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-content">
+                            <h3 class="card-title">Undertale</h3>
+                            <div class="tags">
+                                <span class="tag">Indie</span>
+                                <span class="tag">Trilha Sonora Boa</span>
+                                <span class="tag">2D</span>
+                            </div>
+                        </div>
+                        <div class="price-row">
+                            <div class="discount-tag">
+                                <span class="discount-badge">-50%</span>
+                                <div class="discount-prices">
+                                    <span class="old-price">R$ 20,00</span>
+                                    <span class="new-price">R$ 10,00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="game-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/440/header.jpg?t=1757348372" alt="Team Fortress 2" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-content">
+                            <h3 class="card-title">Team Fortress 2</h3>
+                            <div class="tags">
+                                <span class="tag">Gratuito para Jogar</span>
+                                <span class="tag">Cartunizado</span>
+                                <span class="tag">Multijogador</span>
+                            </div>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-free">Gratuito p/ Jogar</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="game-card">
+                    <div class="card-img-wrapper">
+                        <img src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/782330/feaf8293bcd2d078422faa547bc0d707c08f606e/header.jpg?t=1783432602" alt="DOOM Eternal" class="card-img">
+                    </div>
+                    <div class="card-body">
+                        <div class="card-content">
+                            <h3 class="card-title">DOOM Eternal</h3>
+                            <div class="tags">
+                                <span class="tag">FPS</span>
+                                <span class="tag">Ação</span>
+                                <span class="tag">Pós-Apocalíptico</span>
+                            </div>
+                        </div>
+                        <div class="price-row">
+                            <span class="price-val">R$ 149,00</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
 </body>
 </html>
